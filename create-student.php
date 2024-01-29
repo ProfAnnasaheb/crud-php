@@ -30,7 +30,7 @@ include "dbconfig.php";
     $result = $conn->query($sql);
     if ($result == TRUE) {
       echo "New record created successfully.";
-      header('Location: testview-student.php');
+     header('Location: testview-student.php');
     }else{
       echo "Error:". $sql . "<br>". $conn->error;
     }
